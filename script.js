@@ -528,7 +528,7 @@ const projectData = {
         ],
         challenges: 'Creating a real-time collaborative experience while maintaining data consistency and providing a smooth user interface for complex task management.',
         solutions: 'Leveraged Firebase for real-time data synchronization, implemented Redux for state management, and used Material-UI components for a consistent and intuitive user interface.',
-        liveUrl: './images/projects/project-2.png',
+        liveUrl: './images/projects/project-2.mp4',
         githubUrl: 'https://github.com/username/task-management-app'
     },
     'project3': {
