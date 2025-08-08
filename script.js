@@ -127,15 +127,15 @@ function openProjectModal(projectId) {
                 </div>
             </div>
         `;
-        
-        modal.classList.remove('hidden');
+    
+    modal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
-        
+    
         // Add animation classes after a brief delay
-        setTimeout(() => {
+    setTimeout(() => {
             modalContainer.classList.remove('scale-95', 'opacity-0');
             modalContainer.classList.add('scale-100', 'opacity-100');
-        }, 10);
+    }, 10);
     }
 }
 
@@ -200,14 +200,14 @@ function openFigmaModal(figmaUrl) {
                 <div class="text-center mb-6">
                     <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Figma Prototype</h3>
                     <p class="text-gray-600 dark:text-gray-300">This project has a Figma prototype available.</p>
-                </div>
+            </div>
                 <div class="flex gap-4">
-                    <button onclick="this.closest('.fixed').remove(); document.body.style.overflow = 'auto';" class="flex-1 bg-gray-200 dark:bg-darkHover text-gray-700 dark:text-white py-2 px-4 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
-                        Cancel
-                    </button>
-                    <button onclick="openFigmaInNewTab('${figmaUrl}'); this.closest('.fixed').remove(); document.body.style.overflow = 'auto';" class="flex-1 bg-gradient-to-r from-primary-500 to-orange-500 text-white py-2 px-4 rounded-lg hover:shadow-glow transition-all duration-300">
+                <button onclick="this.closest('.fixed').remove(); document.body.style.overflow = 'auto';" class="flex-1 bg-gray-200 dark:bg-darkHover text-gray-700 dark:text-white py-2 px-4 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
+                    Cancel
+                </button>
+                <button onclick="openFigmaInNewTab('${figmaUrl}'); this.closest('.fixed').remove(); document.body.style.overflow = 'auto';" class="flex-1 bg-gradient-to-r from-primary-500 to-orange-500 text-white py-2 px-4 rounded-lg hover:shadow-glow transition-all duration-300">
                         Open in Figma
-                    </button>
+                </button>
                 </div>
             </div>
         </div>
@@ -229,25 +229,25 @@ function closeFigmaModal() {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         const projectModal = document.getElementById('projectModal');
-        const videoModal = document.getElementById('videoModal');
-        const figmaModal = document.getElementById('figmaModal');
-        
+    const videoModal = document.getElementById('videoModal');
+    const figmaModal = document.getElementById('figmaModal');
+    
         if (!projectModal.classList.contains('hidden')) {
-            closeProjectModal();
-        }
+        closeProjectModal();
+    }
         if (!videoModal.classList.contains('hidden')) {
-            closeVideoModal();
-        }
+        closeVideoModal();
+    }
         if (!figmaModal.innerHTML.trim()) {
-            closeFigmaModal();
-        }
+        closeFigmaModal();
+    }
     }
 });
 
 // Close modals on outside click
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains('fixed')) {
-        document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'auto';
     }
 });
 
@@ -291,7 +291,7 @@ function initializeLoveQuotes() {
             quoteElement.style.opacity = '0.5';
             quoteElement.style.transform = 'translateY(-5px)';
             
-            setTimeout(() => {
+        setTimeout(() => {
                 currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
                 quoteElement.textContent = `"${quotes[currentQuoteIndex]}"`;
                 
@@ -591,7 +591,7 @@ function initializeContactForm() {
             if (count > 500) {
                 charCount.classList.add('text-orange-500');
                 charCount.classList.remove('text-gray-500');
-            } else {
+    } else {
                 charCount.classList.remove('text-orange-500');
                 charCount.classList.add('text-gray-500');
             }
@@ -631,10 +631,10 @@ function initializeContactForm() {
                     charCount.textContent = '0 characters';
                     
                     // Hide success message after 5 seconds
-                    setTimeout(() => {
+            setTimeout(() => {
                         successMessage.classList.add('hidden');
-                    }, 5000);
-                } else {
+    }, 5000);
+    } else {
                     throw new Error('Form submission failed');
                 }
             })
