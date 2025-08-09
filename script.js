@@ -532,23 +532,24 @@ const projectData = {
         githubUrl: 'https://github.com/username/task-management-app'
     },
     'project3': {
-        title: 'Weather Dashboard',
+        title: 'Keyboard Knockout',
         category: 'Frontend Application',
         image: './images/projects/project-3.png',
-        description: 'A beautiful weather dashboard that provides real-time weather information, forecasts, and interactive maps with a focus on user experience and visual appeal.',
-        technologies: ['JavaScript', 'HTML5', 'CSS3', 'Weather API', 'Chart.js'],
+        description: 'A fast-paced React + TypeScript typing game where your speed and accuracy determine the strength of your punches in a boxing match against an AI opponent.',
+        technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Zustand', 'Framer Motion'],
         features: [
-            'Real-time weather data',
-            '5-day weather forecast',
-            'Interactive weather maps',
-            'Location-based weather',
-            'Weather alerts and notifications',
-            'Beautiful data visualizations'
+           'Real-time WPM calculation',
+        'Accuracy tracking system',
+        'Combo mechanics for increased damage',
+        'Health system for player and bot',
+        '60-second timed rounds',
+        'Punch and combo animations',
+        'Win/lose game states with reset functionality'
         ],
-        challenges: 'Integrating multiple weather APIs while creating an intuitive and visually appealing interface that works seamlessly across different devices.',
-        solutions: 'Used Chart.js for data visualization, implemented responsive design principles, and created a modular architecture for easy API integration and maintenance.',
+        challenges: 'Creating a smooth and responsive typing experience while synchronizing animations, health updates, and combo tracking in real time.',
+        solutions: 'Leveraged Zustand for efficient state management, Tailwind CSS for responsive UI, and Framer Motion for fluid animations. Implemented modular components to keep logic organized and maintainable.',
         liveUrl: './images/projects/project-3.mp4',
-        githubUrl: 'https://github.com/username/weather-dashboard'
+        githubUrl: 'https://github.com/gerlieroiles7/keyboard-knockout'
     }
 };
 
